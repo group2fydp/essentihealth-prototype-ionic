@@ -15,6 +15,11 @@ export class AppComponent {
       title: 'Home',
       url: '/home',
       icon: 'home'
+    },
+    {
+      title: "My Safety Plan",
+      url: '/safety-plan-static',
+      icon: 'book'
     }
   ];
 
