@@ -1,13 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-safety-plan-static',
-  templateUrl: './safety-plan-static.page.html',
-  styleUrls: ['./safety-plan-static.page.scss'],
+@Injectable({
+  providedIn: 'root'
 })
-export class SafetyPlanStaticPage implements OnInit {
+export class CopingStrategiesService {
 
-  public strategies = [
+  constructor() { }
+
+  strategies = [
     {
       title: "Warning Signs",
       signs: [
@@ -33,10 +33,4 @@ export class SafetyPlanStaticPage implements OnInit {
       ]
     }
   ]
-
-  constructor() { }
-
-  ngOnInit() {
-  }
-
 }

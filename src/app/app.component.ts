@@ -17,7 +17,12 @@ export class AppComponent {
       icon: 'home'
     },
     {
-      title: "My Safety Plan",
+      title: "Guided Mode",
+      url: '/tabs',
+      icon: 'play-circle'
+    },
+    {
+      title: "My Strategies",
       url: '/safety-plan-static',
       icon: 'book'
     }

@@ -8,14 +8,17 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+    path: 'tabs',
+    loadChildren: './pages/crisis-mode/tabs-page/tabs-page.module#TabsPageModule'
   },
   {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+    path: 'home',
+    loadChildren: './pages/normal-mode/home/home.module#HomePageModule'
   },
-  { path: 'safety-plan-static', loadChildren: './safety-plan-static/safety-plan-static.module#SafetyPlanStaticPageModule' }
+  { 
+    path: 'safety-plan-static', 
+    loadChildren: './pages/normal-mode/safety-plan-static/safety-plan-static.module#SafetyPlanStaticPageModule' 
+  }
 ];
 
 @NgModule({
