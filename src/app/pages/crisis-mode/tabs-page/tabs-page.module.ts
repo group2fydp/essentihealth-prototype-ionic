@@ -14,15 +14,15 @@ const routes: Routes = [
     children: [
       { 
         path: 'guided-mode', 
-        loadChildren: './guided-mode/guided-mode.module#GuidedModePageModule' 
+        loadChildren: 'src/app/pages/crisis-mode/guided-mode/guided-mode.module#GuidedModePageModule' 
       },
       { 
         path: 'resources', 
-        loadChildren: './resources/resources.module#ResourcesPageModule' 
+        loadChildren: 'src/app/pages/crisis-mode/resources/resources.module#ResourcesPageModule' 
       },
       { 
         path: 'information', 
-        loadChildren: './information/information.module#InformationPageModule' 
+        loadChildren: 'src/app/pages/crisis-mode/information/information.module#InformationPageModule' 
       }
     ]
   },

@@ -20,7 +20,7 @@ export class CopingStrategiesService {
       title: "Reasons To Live",
       list: [
         "My parents love me",
-        "It is frouned upon in my religion",
+        "It is frowned upon in my religion",
         "I couldn't do it to my best friend",
         "I am almost done my degree"
       ]

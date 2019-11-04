@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CopingStrategiesService } from '../services/coping-strategies.service';
+import { CopingStrategiesService } from 'src/app/services/coping-strategies.service';
 
 @Component({
   selector: 'app-guided-mode',

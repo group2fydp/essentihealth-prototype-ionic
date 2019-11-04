@@ -9,15 +9,15 @@ const routes: Routes = [
   },
   {
     path: 'tabs',
-    loadChildren: './pages/crisis-mode/tabs-page/tabs-page.module#TabsPageModule'
+    loadChildren: 'src/app/pages/crisis-mode/tabs-page/tabs-page.module#TabsPageModule'
   },
   {
     path: 'home',
-    loadChildren: './pages/normal-mode/home/home.module#HomePageModule'
+    loadChildren: 'src/app/pages/normal-mode/home/home.module#HomePageModule'
   },
   { 
     path: 'safety-plan-static', 
-    loadChildren: './pages/normal-mode/safety-plan-static/safety-plan-static.module#SafetyPlanStaticPageModule' 
+    loadChildren: 'src/app/pages/normal-mode/safety-plan-static/safety-plan-static.module#SafetyPlanStaticPageModule' 
   }
 ];
 
