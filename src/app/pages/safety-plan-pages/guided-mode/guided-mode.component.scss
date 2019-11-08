@@ -1,0 +1,92 @@
+.box{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.title-box{
+    overflow: auto;
+    flex-basis: 12%;
+}
+
+.slides-box{
+    flex-basis: 78%;
+}
+
+.btn-box{
+    flex-basis: 10%;
+}
+
+.cs-card{
+    display: block;
+    height: 90%;
+    width: 100%;
+    overflow: auto;
+    background-color: #FFFFFF;
+}
+
+.cs-title{
+    padding: 15px 0px 0px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #2456A1;
+    text-align: left;
+}
+
+.cs-image{
+    width: 100%;
+    max-height: 160px;
+}
+
+.cs-slides{
+    height: 100%;
+}
+.cs-card-title{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #000000;
+    text-align: left;
+}
+
+.cs-subtitle{
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    color: #000000;
+}
+
+.btn-stack{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn{
+    border-radius: 4px;
+    width: 160px;
+}
+
+.action-btn{
+    background-color: #38B6FF;
+    color: #FFFFFF;
+}
+
+.skip-btn{
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    color: #38B6FF;
+}
+
+.bottom-btn{
+    padding-bottom: 10px;
+}

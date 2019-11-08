@@ -1,5 +1,7 @@
 {
   "name": "mindcove",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

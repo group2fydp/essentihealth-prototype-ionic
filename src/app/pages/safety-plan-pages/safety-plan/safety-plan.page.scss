@@ -1,0 +1,56 @@
+.box{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background-color: #E5E5E5;
+}
+
+.title-box{
+    flex-basis: 12%;
+}
+
+.top-btn-box{
+    display: flex;
+    flex-flow: column;
+}
+
+.slides-box{
+    flex-basis: 78%;
+    overflow: auto;
+}
+
+.btn-box{
+    flex-basis: 10%;
+}
+
+.cs-title{
+    padding: 15px 0px 0px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #2456A1;
+    text-align: left;
+}
+
+.cs-subtitle{
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    padding-top: 0px;
+    color: #000000;
+}
+
+.toggle-btn{
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 10px;
+}
+.toggle-btn-enter{
+    color: #f04141 !important;
+}
+
+.toggle-btn-exit{
+    color: #38B6FF !important;
+}

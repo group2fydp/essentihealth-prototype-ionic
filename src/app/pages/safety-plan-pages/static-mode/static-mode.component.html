@@ -1,0 +1,16 @@
+<ion-card class="welcome-card" *ngFor="let element of elements">
+    <ion-card-header>
+      <ion-card-title class="el-title">
+        {{element.title}} 
+        <ion-icon name="information-circle-outline"></ion-icon>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <ion-list>
+          <ion-item *ngFor="let i of element.list">
+            <ion-label>{{i}}</ion-label>
+            <ion-checkbox slot="end"></ion-checkbox>
+          </ion-item>
+        </ion-list>
+    </ion-card-content>
+  </ion-card>

@@ -1,0 +1,26 @@
+<ion-slides [options]="slideOpts" class="cs-slides swiper-no-swiping" #slides (ionSlideWillChange)="checkSlide()">
+  <ion-slide *ngFor="let strategy of strategies; let i = index">
+    <ion-card class="cs-card">
+
+      <ion-card-header>
+        <ion-card-title class="cs-card-title">{{i + 1}}. {{strategy.title}}</ion-card-title>
+        <ion-icon name="information-circle" slot="end"></ion-icon>
+      </ion-card-header>
+
+      <ion-card-content>
+        <img src="{{strategy.image}}" class="cs-image">
+
+        <ion-buttons slot="center" class="btn-stack">
+          <ion-button class="action-btn btn">{{strategy.btn}}</ion-button>
+          <ion-button (click)="nextSlide()" class="btn skip-btn" [hidden]="disableNextBtn">SKIP STRATEGY</ion-button>
+        </ion-buttons>
+
+        <ion-buttons slot="start">
+          <ion-button (click)="previousSlide()" [hidden]="disablePrevBtn">
+            <ion-icon name="arrow-back"></ion-icon> Back
+          </ion-button>
+        </ion-buttons>
+      </ion-card-content>
+    </ion-card>
+  </ion-slide>
+</ion-slides>

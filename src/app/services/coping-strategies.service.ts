@@ -8,29 +8,20 @@ export class CopingStrategiesService {
   constructor() { }
 
   strategies = [
-    {
-      title: "Warning Signs",
-      signs: [
-        "Not Eating",
-        "Skipping Class",
-        "Unable to fall asleep quickly"
-      ]
-    },
-    {
-      title: "Reasons To Live",
-      list: [
-        "My parents love me",
-        "It is frowned upon in my religion",
-        "I couldn't do it to my best friend",
-        "I am almost done my degree"
-      ]
-    },
-    {
-      title: "Emergency Contacts",
-      list:[
-        "Mom: 519-555-8888",
-        "Gabby: 614-888-9999"
-      ]
-    }
+  {
+    title: "Breathing Excercises",
+    image: "../../../assets/images/coping-strategies/meditate-img.png",
+    btn: "START EXCERCISE"
+  },
+  {
+    title: "Call Mom",
+    image: "../../../assets/images/coping-strategies/call-mom-img.jpg",
+    btn: "CALL MOM"
+  },
+  {
+    title: "Go for a walk",
+    image: "../../../assets/images/coping-strategies/go-for-a-walk-img.jpeg",
+    btn: "GET DIRECTIONS"
+  }
   ]
 }

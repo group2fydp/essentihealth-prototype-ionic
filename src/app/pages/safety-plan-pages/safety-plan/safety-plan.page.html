@@ -1,0 +1,35 @@
+<ion-header>
+</ion-header>
+
+<ion-content>
+  <div class="box">
+    <div class="title-box">
+      <div class="top-btn-box">
+        <ion-title class="cs-title">Your Safety Plan</ion-title>
+        <ion-title class="cs-title cs-subtitle">Lets go through some strategies to help you</ion-title>
+        <ion-buttons slot="start">
+          <ion-button class="toggle-btn" color="primary">SHARE PLAN</ion-button>
+          <ion-button (click)="toggleGuidedMode()"
+            [ngClass]="(guidedModeActive) ? 'toggle-btn-enter' : 'toggle-btn-exit'" class="toggle-btn">{{toggleBtnText}}
+          </ion-button>
+        </ion-buttons>
+      </div>
+    </div>
+    <div class="slides-box">
+      <div *ngIf="guidedModeActive; else static">
+        <app-guided-mode></app-guided-mode>
+      </div>
+      <ng-template #static>
+        <app-static-mode></app-static-mode>
+      </ng-template>
+    </div>
+    <div class="btn-box" [hidden]="!guidedModeActive">
+      <ion-toolbar>
+        <ion-buttons slot="end">
+          <ion-button class="bottom-btn" color="primary">Reasons To Live<ion-icon name="arrow-forward"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </div>
+  </div>
+</ion-content>
